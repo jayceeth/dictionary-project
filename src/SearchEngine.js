@@ -10,6 +10,7 @@ export default function SearchEngine(){
     }
     function searchWord(event){
         event.preventDefault();
+        alert(`Searching for ${word}`)
     }
     return(
         <div className="SearchEngine">
