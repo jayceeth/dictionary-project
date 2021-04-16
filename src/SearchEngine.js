@@ -23,7 +23,7 @@ export default function SearchEngine(){
     return(
         <div className="SearchEngine">
             <form onSubmit={searchWord}>
-                <input type="search" autoFocus={true} onChange={handleWordChange} />
+                <input type="search" autoFocus={true} onChange={handleWordChange}/>
             </form>
             <Definition definition={definition}/>
         </div>

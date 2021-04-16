@@ -5,3 +5,7 @@
   margin-top: 45px;
   color: rgb(183, 162, 221);
 }
+.App footer {
+  position: relative;
+  left: 100px;
+}
