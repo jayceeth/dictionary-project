@@ -11,7 +11,7 @@ function App() {
         <SearchEngine />
         </main>
         <footer className="app-footer">
-          <small>Coded by Jaycee</small>
+          <small><a href="https://github.com/jayceeth/dictionary-project">Open source</a> by Jaycee</small>
         </footer>
       </div>
     </div>
