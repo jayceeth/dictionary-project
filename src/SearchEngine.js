@@ -17,7 +17,6 @@ export default function SearchEngine(){
     function searchWord(event){
         event.preventDefault();
         let apiURL=`https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
-        console.log(apiURL)
         axios.get(apiURL).then(handleResponse);
     }
     return(
