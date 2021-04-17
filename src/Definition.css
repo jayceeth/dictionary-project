@@ -1,5 +1,5 @@
-.Definition {
-  position: relative;
-  left: 100px;
-  margin-top: 40px;
+.Definition h2 {
+  font-size: 32px;
+  line-height: 1;
+  color: rgb(153, 129, 197);
 }

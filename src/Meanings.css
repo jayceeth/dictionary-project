@@ -1,1 +1,7 @@
+.Meanings strong {
+  color: rgb(75, 75, 75);
+}
 
+.Meanings .part-of-speech {
+  color: rgb(153, 129, 197);
+}

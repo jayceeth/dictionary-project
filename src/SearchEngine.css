@@ -1,6 +1,19 @@
-.SearchEngine form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
+.SearchEngine section {
+  background: whitesmoke;
+  padding: 30px;
+  border-radius: 5px;
+  margin: 20px 0;
+  box-shadow: 0 10px 10px rgb(0 0 0 / 7%);
+}
+
+.SearchEngine input {
+  width: 100%;
+  border: 1px solid rgb(22, 22, 22, 0.3);
+  color: rgb(75, 75, 75);
+  border-radius: 5px;
+  padding: 4px 4px;
+}
+
+.SearchEngine .words {
+  color: rgb(75, 75, 75, 0.8);
 }

@@ -1,9 +1,12 @@
+.App {
+  background-color: rgba(218, 218, 235, 0.842);
+}
 .App header {
   text-align: center;
   font-weight: 600;
   font-size: 40px;
-  margin-top: 45px;
-  color: rgb(183, 162, 221);
+  padding-top: 45px;
+  color: rgb(153, 129, 197);
 }
 .App footer {
   position: relative;

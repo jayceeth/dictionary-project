@@ -1,0 +1,14 @@
+.Synonyms li {
+  list-style: none;
+  display: inline;
+  padding-right: 15px;
+  position: relative;
+  left: -25px;
+  top: 10px;
+}
+
+.Synonyms .category {
+  position: relative;
+  left: -32px;
+  top: 10px;
+}

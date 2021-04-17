@@ -6,6 +6,7 @@ import "./SearchEngine.css"
 export default function SearchEngine(){
     let[word, setWord]= useState(" ");
     let [definition, setDefinition]=useState(null);
+    let [loaded, setLoaded]=useState(false);
 
     function handleResponse(response){
         setDefinition(response.data[0])
@@ -14,17 +15,36 @@ export default function SearchEngine(){
         event.preventDefault();
         setWord(event.target.value)
     }
-    function searchWord(event){
-        event.preventDefault();
+    function searchWord(){
         let apiURL=`https://api.dictionaryapi.dev/api/v2/entries/en_US/${word}`;
         axios.get(apiURL).then(handleResponse);
     }
-    return(
+    function handleSubmit(event){
+        event.preventDefault();
+        searchWord();
+    }
+
+    function loading(){
+        setLoaded(true);
+        searchWord();
+    }
+    if(loaded){
+        return(
         <div className="SearchEngine">
-            <form onSubmit={searchWord}>
-                <input type="search" autoFocus={true} onChange={handleWordChange}/>
+            <section>
+            <form onSubmit={handleSubmit}>
+                <input type="search" autoFocus={true} onChange={handleWordChange} />
             </form>
+            <div className="words">
+                <small><em>examples: pets, blue, sunrise, sports, television, etc.</em></small>
+            </div>
+            </section>
             <Definition definition={definition}/>
         </div>
     )
+    }else{
+        loading();
+        return "Loading..."
+    }
+    
 }
