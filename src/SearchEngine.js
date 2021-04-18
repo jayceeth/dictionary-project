@@ -3,8 +3,8 @@ import axios from "axios";
 import Definition from "./Definition";
 import "./SearchEngine.css"
 
-export default function SearchEngine(){
-    let[word, setWord]= useState(" ");
+export default function SearchEngine(props){
+    let[word, setWord]= useState(props.defaultWord);
     let [definition, setDefinition]=useState(null);
     let [loaded, setLoaded]=useState(false);
 
