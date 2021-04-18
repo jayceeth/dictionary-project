@@ -13,7 +13,6 @@
   padding-top: 45px;
   color: rgb(153, 129, 197);
 }
-.App footer {
-  position: relative;
-  left: 100px;
+.App .app-footer {
+  text-align: center;
 }
