@@ -36,7 +36,7 @@ export default function SearchEngine(props){
                 <input type="search" autoFocus={true} onChange={handleWordChange} />
             </form>
             <div className="words">
-                <small><em>examples: pets, blue, sunrise, sports, television, etc.</em></small>
+                <small><em>examples: beach, sunrise, sports, hiking, television, etc.</em></small>
             </div>
             </section>
             <Definition definition={definition}/>
